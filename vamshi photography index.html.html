@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vamshi Photography & Studio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0b0b0b;
+    color: white;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1519741497674-611481863552') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero h1 { font-family: 'Playfair Display'; font-size: 3.5rem; }
+.btn {
+    padding: 12px 30px;
+    border: 1px solid gold;
+    color: gold;
+    text-decoration: none;
+}
+
+/* SECTION */
+.section {
+    padding: 70px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 15px;
+}
+
+.grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.grid img:hover {
+    transform: scale(1.05);
+}
+
+/* SPLIT SECTION */
+.split {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.split img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.split div {
+    flex: 1;
+}
+
+/* PRODUCT SMALL */
+.product-box {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: auto;
+}
+
+/* REVIEW */
+.review {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, select {
+    padding: 12px;
+}
+
+button {
+    padding: 12px;
+    background: gold;
+    border: none;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    padding: 15px;
+    border-radius: 50%;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+<div>
+<h1>Vamshi Photography & Studio</h1>
+<p>Capturing Stories That Last Forever</p>
+<a class="btn" href="#booking">Book Now</a>
+</div>
+</div>
+
+<!-- WEDDING PORTFOLIO -->
+<div class="section">
+<h2>Wedding Photography</h2>
+<div class="grid">
+<img src="https://images.unsplash.com/photo-1520857014576-2c4f4c972b57">
+<img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc">
+<img src="https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0">
+</div>
+</div>
+
+<!-- PREWEDDING -->
+<div class="section split">
+<img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486">
+<div>
+<h2>Pre-Wedding Shoot</h2>
+<p>Romantic storytelling sessions designed to capture your love journey beautifully.</p>
+</div>
+</div>
+
+<!-- BABY -->
+<div class="section split">
+<div>
+<h2>Baby Shower Photography</h2>
+<p>Capture joyful moments and family emotions with beautiful photography.</p>
+</div>
+<img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643">
+</div>
+
+<!-- EVENT -->
+<div class="section">
+<h2>Event Coverage</h2>
+<div class="grid">
+<img src="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92">
+<img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30">
+</div>
+</div>
+
+<!-- PRODUCT (SMALL) -->
+<div class="section">
+<h2>Product Photography</h2>
+<div class="product-box">
+<img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30">
+<p>Clean, sharp visuals to showcase your products professionally.</p>
+</div>
+</div>
+
+<!-- REVIEW -->
+<div class="section">
+<h2>Client Review</h2>
+<div class="review">
+<p>⭐⭐⭐⭐⭐</p>
+<p>
+Excellent service by Vamshi Photography! Immediate response and very professional.
+</p>
+<p><strong>— Manu Mohan</strong></p>
+</div>
+</div>
+
+<!-- BOOKING -->
+<div class="section" id="booking">
+<h2>Book Your Shoot</h2>
+
+<form action="https://formspree.io/f/yourformid" method="POST">
+<input type="text" placeholder="Name" required>
+<input type="tel" placeholder="Phone" required>
+
+<select>
+<option>Wedding</option>
+<option>Pre-Wedding</option>
+<option>Baby</option>
+<option>Event</option>
+<option>Product</option>
+</select>
+
+<input type="date">
+<button>Confirm Booking</button>
+</form>
+
+</div>
+
+<!-- BLOG -->
+<div class="section">
+<h2>Our Story</h2>
+<p>
+We believe every photo tells a story. From weddings to product shoots, we capture 
+moments that last forever with creativity and precision.
+</p>
+</div>
+
+<!-- CONTACT -->
+<div class="section">
+<h2>Contact</h2>
+<p>📞 09986656666</p>
+<p>📷 @vamshiphotography_66</p>
+</div>
+
+<a class="whatsapp" href="https://wa.me/919986656666">💬</a>
+
+</body>
+</html>
